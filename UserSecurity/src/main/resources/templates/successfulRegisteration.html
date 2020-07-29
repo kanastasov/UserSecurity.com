@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title th:remove="all">Template for HTML email</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+  <body>
+    <p th:text="${'Hello Dear,' + user.getFirstName}">
+      Hello Dear John Doe
+    </p>
+    <p th:text="${'Welcome.Please visit, http://aa.ru/activate-account/' + user.getFirstName}">
+      Welcome. Please visit http://aa.ru/activate-account/blahblah
+    </p>
+    <p>
+      Thanks
+    </p>
+  </body>
+</html>
